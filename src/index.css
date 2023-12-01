@@ -1,0 +1,62 @@
+:root {
+  --primary-gradient:   linear-gradient(45deg, #FF6B6B, #6B6BFF); /* Define your primary gradient */
+  --secondary-gradient: linear-gradient(45deg, #4CAF50, #FFC107); /* Define another gradient */
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+*{
+  font-family:sustem-ui,Verdana, Geneva, Tahoma, sans-serif
+}
+
+body{
+  background: var(--primary-gradient);
+}
+
+.image-cards{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: var(--secondary-gradient);
+  min-width: 255px;
+  padding-bottom:5px;
+  height:auto;
+  cursor: pointer;
+ 
+}
+
+.body{
+  min-height: 100vh;
+  
+}
+
+
+.image-cards{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-cards img{
+  width:100%;
+  height:auto;
+}
+
+.image-cards:hover {
+  box-shadow: 0 0 20px black;
+}
+
+
+.image-container{
+
+  display:flex;
+  flex-wrap: wrap; 
+  gap:30px;
+  justify-content:center;
+  padding:20px;
+}
